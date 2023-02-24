@@ -7,8 +7,8 @@ using UnityEngine;
 public class ResourceManager : MonoBehaviour
 {
     public static ResourceManager Instance { get; private set; }
-    [SerializeField] private ResourcesListSO resourcesList;
     private Dictionary<ResourceSO, int> resourceDictionary;
+    private ResourcesListSO resourcesList;
     
     private void Awake()
     {
@@ -17,6 +17,7 @@ public class ResourceManager : MonoBehaviour
             Instance = this;
         }
 
+        resourcesList = GameResources.Instance.ResourcesList;
         resourceDictionary = new Dictionary<ResourceSO, int>();
         foreach (var resource in resourcesList.List)
         {
