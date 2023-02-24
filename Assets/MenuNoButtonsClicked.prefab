@@ -66,10 +66,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Exit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8dd4c84868d9ffb45994fa18a47b5081, type: 2}
+  m_sharedMaterial: {fileID: 3427297333982745981, guid: 8dd4c84868d9ffb45994fa18a47b5081,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -201,10 +202,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Options
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8dd4c84868d9ffb45994fa18a47b5081, type: 2}
+  m_sharedMaterial: {fileID: 3427297333982745981, guid: 8dd4c84868d9ffb45994fa18a47b5081,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -285,7 +287,7 @@ GameObject:
   - component: {fileID: 4452753224652527155}
   - component: {fileID: 4452753224652527152}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -585,7 +587,7 @@ GameObject:
   - component: {fileID: 4452753224887423197}
   - component: {fileID: 4452753224887423170}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -783,7 +785,7 @@ GameObject:
   - component: {fileID: 4452753225286687785}
   - component: {fileID: 581597582673126318}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -891,19 +893,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4452753225286687788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &4452753225286687790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,9 +979,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f2ae951c680a548a6d99feef64a18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yourButton: {fileID: 0}
-  menuNothing: {fileID: 0}
-  menuPlay: {fileID: 0}
+  yourButton: {fileID: 4452753225286687789}
+  menuNothing: {fileID: 4452753224667079405}
+  menuPlay: {fileID: 2956605158826728598, guid: 09f906a2a58cf3140bdff3a8a95552e6,
+    type: 3}
+  menuOptions: {fileID: 9138868208144446621, guid: eaaaeadf47f052540bcd504ce24ad5e3,
+    type: 3}
 --- !u!1 &4452753225327884259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,10 +1051,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8dd4c84868d9ffb45994fa18a47b5081, type: 2}
+  m_sharedMaterial: {fileID: 3427297333982745981, guid: 8dd4c84868d9ffb45994fa18a47b5081,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
