@@ -20,4 +20,5 @@ public class GameResources : MonoBehaviour
     }
     
     [field: SerializeField] public ResourcesListSO ResourcesList { get; private set; }
+    [field: SerializeField] public ResourceSO Cebulion { get; private set; }
 }
