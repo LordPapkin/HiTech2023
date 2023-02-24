@@ -5,25 +5,26 @@ using UnityEngine;
 
 public class UnitMovementController : MonoBehaviour
 {
-    private bool OnTarget=false;
     public float velocity = 1f;
+    public float rotationSpeed = 1f;
     private Vector3 target;
+    private Quaternion toRotation;
     public Rigidbody unitRb;
     public MovementWaypointsManager MovementWaypointsManager;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        target = MovementWaypointsManager.currentWaypoint.position;
-        OnTarget = OnTargetCheck();
+        target = MovementWaypointsManager.GetNextWP().position;
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!OnTargetCheck())
+        if (!MovementWaypointsManager.DestinationReached)
         {
-            unitRb.MovePosition(transform.position + target * (Time.deltaTime * velocity));
+            Movement();
         }
     }
 
@@ -32,5 +33,18 @@ public class UnitMovementController : MonoBehaviour
         if (target == unitRb.position)
             return true;
         return false;
+    }
+
+    private void Movement()
+    {
+        if (Vector3.Distance(target,unitRb.position)>0.1f)
+        {
+            unitRb.MovePosition(Vector3.MoveTowards(this.transform.position, target, Time.deltaTime * velocity));
+            transform.LookAt(target);
+        }
+        else
+        {
+            target = MovementWaypointsManager.GetNextWP().position;
+        }
     }
 }

@@ -6,17 +6,31 @@ using UnityEngine;
 
 public class MovementWaypointsManager : MonoBehaviour
 {
+    public bool DestinationReached { get; private set; } = false;
     public Transform currentWaypoint;
-    public Queue<Transform> Waypoints;
+    public Queue<Transform> WaypointsQueue;
+
+    public List<Transform> Waypoints;
     // Start is called before the first frame update
     void Start()
     {
-        currentWaypoint = Waypoints.Dequeue();
+        WaypointsQueue = new Queue<Transform>();
+        foreach (Transform WP in Waypoints)
+        {
+            WaypointsQueue.Enqueue(WP);
+        }
     }
 
     public Transform GetNextWP()
     {
-        currentWaypoint = Waypoints.Dequeue();
+        if (WaypointsQueue.Count==0)
+        {
+            Debug.Log("Journey finished");
+            DestinationReached = true;
+            return currentWaypoint;
+        }
+        Debug.Log("GetNext");
+        currentWaypoint = WaypointsQueue.Dequeue();
         return currentWaypoint;
     }
 }
