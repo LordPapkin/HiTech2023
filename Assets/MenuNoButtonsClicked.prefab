@@ -411,8 +411,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: GameDevTraumCursorManager, Assembly-CSharp
+        - m_Target: {fileID: 2010611983874530665, guid: c948d0cb098bd0547bc18aa0caefcc52,
+            type: 3}
+          m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
           m_MethodName: OnButtonCursorEnter
           m_Mode: 1
           m_Arguments:
@@ -427,8 +428,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: GameDevTraumCursorManager, Assembly-CSharp
+        - m_Target: {fileID: 2010611983874530665, guid: c948d0cb098bd0547bc18aa0caefcc52,
+            type: 3}
+          m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
           m_MethodName: OnButtonCursorExit
           m_Mode: 1
           m_Arguments:
@@ -709,8 +711,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: GameDevTraumCursorManager, Assembly-CSharp
+        - m_Target: {fileID: 2010611983874530665, guid: c948d0cb098bd0547bc18aa0caefcc52,
+            type: 3}
+          m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
           m_MethodName: OnButtonCursorEnter
           m_Mode: 1
           m_Arguments:
@@ -725,8 +728,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: GameDevTraumCursorManager, Assembly-CSharp
+        - m_Target: {fileID: 2010611983874530665, guid: c948d0cb098bd0547bc18aa0caefcc52,
+            type: 3}
+          m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
           m_MethodName: OnButtonCursorExit
           m_Mode: 1
           m_Arguments:
@@ -777,6 +781,7 @@ GameObject:
   - component: {fileID: 4452753225286687789}
   - component: {fileID: 4452753225286687790}
   - component: {fileID: 4452753225286687785}
+  - component: {fileID: 581597582673126318}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -886,7 +891,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4452753225286687788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4452753225286687790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,8 +921,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: GameDevTraumCursorManager, Assembly-CSharp
+        - m_Target: {fileID: 2010611983874530665, guid: c948d0cb098bd0547bc18aa0caefcc52,
+            type: 3}
+          m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
           m_MethodName: OnButtonCursorEnter
           m_Mode: 1
           m_Arguments:
@@ -920,8 +938,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: GameDevTraumCursorManager, Assembly-CSharp
+        - m_Target: {fileID: 2010611983874530665, guid: c948d0cb098bd0547bc18aa0caefcc52,
+            type: 3}
+          m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
           m_MethodName: OnButtonCursorExit
           m_Mode: 1
           m_Arguments:
@@ -958,6 +977,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &581597582673126318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4452753225286687953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f2ae951c680a548a6d99feef64a18c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yourButton: {fileID: 0}
+  menuNothing: {fileID: 0}
+  menuPlay: {fileID: 0}
 --- !u!1 &4452753225327884259
 GameObject:
   m_ObjectHideFlags: 0
