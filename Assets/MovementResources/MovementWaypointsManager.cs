@@ -1,20 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class MovementWaypointsManager : MonoBehaviour
 {
-    public List<Transform> Waypoints;
+    public Transform currentWaypoint;
+    public Queue<Transform> Waypoints;
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentWaypoint = Waypoints.Dequeue();
     }
 
-    // Update is called once per frame
-    void Update()
+    public Transform GetNextWP()
     {
-        
+        currentWaypoint = Waypoints.Dequeue();
+        return currentWaypoint;
     }
 }
