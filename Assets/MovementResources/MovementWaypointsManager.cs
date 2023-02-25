@@ -12,7 +12,7 @@ public class MovementWaypointsManager : MonoBehaviour
 
     public List<Transform> Waypoints;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         WaypointsQueue = new Queue<Transform>();
         foreach (Transform WP in Waypoints)
