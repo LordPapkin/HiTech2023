@@ -36,7 +36,7 @@ public class UnitMovementController : MonoBehaviour
     {
         return (Vector3.Distance(target, unitRb.position) < 0.1f);
     }
-    private void Movement()
+    protected virtual void Movement()
     {
         if (Vector3.Distance(target,unitRb.position) > 0.2f)
         {
