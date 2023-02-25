@@ -10,16 +10,16 @@ public class DialogBox : MonoBehaviour
     private void OnEnable()
     {
         background.alpha = 0;
-        background.LeanAlpha(0.6f, 0.5f);
-
+        background.LeanAlpha(0.6f, 0.5f).setIgnoreTimeScale(true); 
+        
         box.localPosition = new Vector2(0, -Screen.height);
-        box.LeanMoveLocalY(0, 0.5f).setEaseOutExpo().delay = 0.1f;
+        box.LeanMoveLocalY(0, 0.5f).setIgnoreTimeScale(true).setEaseOutExpo().delay = 0.1f;
     }
 
     public void CloseDialog()
     {
-        background.LeanAlpha(0, 0.5f);
-        box.LeanMoveLocalY(-Screen.height, 0.5f).setEaseInExpo().setOnComplete(OnComplete);
+        background.LeanAlpha(0, 0.5f).setIgnoreTimeScale(true);
+        box.LeanMoveLocalY(-Screen.height, 0.5f).setIgnoreTimeScale(true).setEaseInExpo().setOnComplete(OnComplete);
     }
 
     void OnComplete()
