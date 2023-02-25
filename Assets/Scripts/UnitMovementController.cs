@@ -11,40 +11,47 @@ public class UnitMovementController : MonoBehaviour
     private Quaternion toRotation;
     public Rigidbody unitRb;
     private MovementWaypointsManager movementWaypointsManager;
+    private Queue<Transform> waypoints;
+    private bool destinationReached = false;
+    private int n = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         movementWaypointsManager = MovementWaypointsManager.Instance;
-        target = movementWaypointsManager.GetNextWP().position;
+        waypoints = movementWaypointsManager.GetWaypointsQueue();
+        target = waypoints.Dequeue().position;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!movementWaypointsManager.DestinationReached)
+        if (!destinationReached || !IsOnTarget())
         {
             Movement();
         }
     }
 
-    private bool OnTargetCheck()
+    private bool IsOnTarget()
     {
-        if (target == unitRb.position)
-            return true;
-        return false;
+        return (Vector3.Distance(target, unitRb.position) < 0.1f);
     }
-
     private void Movement()
     {
-        if (Vector3.Distance(target,unitRb.position)>0.1f)
+        if (Vector3.Distance(target,unitRb.position) > 0.2f)
         {
             unitRb.MovePosition(Vector3.MoveTowards(this.transform.position, target, Time.deltaTime * velocity));
             transform.LookAt(target);
         }
         else
         {
-            target = movementWaypointsManager.GetNextWP().position;
+            if (!destinationReached)
+            {
+                target = waypoints.Dequeue().position;
+                Debug.Log("WP reached" + n++);
+            }
+
+            destinationReached = (waypoints.Count == 0);
         }
     }
 }
