@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class BasicTurret : MonoBehaviour
@@ -8,19 +9,33 @@ public class BasicTurret : MonoBehaviour
     [SerializeField] private float searchCooldown;
     [SerializeField] private float fireCooldown;
 
+    [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private Transform projectileSpawnPoint;
+    [SerializeField] private Transform projectileContainer;
+
     [SerializeField] private BasicUnit target;
     
     void Start()
     {
-        StartCoroutine(LookForEnemies());
+        StartCoroutine(LookForEnemiesCor());
+        StartCoroutine(ShootingCor());
     }
 
-    private IEnumerator LookForEnemies()
+    private IEnumerator LookForEnemiesCor()
     {
         while (true)
         {
             yield return new WaitForSeconds(searchCooldown);
             PerformSearch();
+        }
+    }
+
+    private IEnumerator ShootingCor()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(fireCooldown);
+            Fire();
         }
     }
 
@@ -47,5 +62,14 @@ public class BasicTurret : MonoBehaviour
                 target = unit;
             }
         }
+    }
+
+    private void Fire()
+    {
+        if(target == null)
+            return;
+        GameObject spawnedProjectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, quaternion.identity, projectileContainer);
+        BasicProjectile projectile = spawnedProjectile.GetComponent<BasicProjectile>();
+        projectile.SetTarget(target);
     }
 }

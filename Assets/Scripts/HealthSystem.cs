@@ -15,7 +15,7 @@ public class HealthSystem : MonoBehaviour
         healthAmount = healthAmountMax;
     }
     
-    public void TakeDamage(int damage, Type attackType)
+    public void TakeDamage(int damage)
     {
         healthAmount -= damage;
         healthAmount = Mathf.Clamp(healthAmount, 0, healthAmountMax);
