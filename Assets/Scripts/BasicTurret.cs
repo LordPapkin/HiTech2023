@@ -8,7 +8,7 @@ public class BasicTurret : MonoBehaviour
     [SerializeField] private float searchCooldown;
     [SerializeField] private float fireCooldown;
 
-    private GameObject target;
+    [SerializeField] private BasicUnit target;
     
     void Start()
     {
@@ -17,12 +17,35 @@ public class BasicTurret : MonoBehaviour
 
     private IEnumerator LookForEnemies()
     {
-        yield return new WaitForSeconds(searchCooldown);
-        PerformSearch();
+        while (true)
+        {
+            yield return new WaitForSeconds(searchCooldown);
+            PerformSearch();
+        }
     }
 
     private void PerformSearch()
     {
+        target = null;
+        Collider[] colliders = Physics.OverlapSphere(transform.position, searchRange);
         
+        foreach (Collider col in colliders)
+        {
+            if(!col.CompareTag("Unit"))
+                continue;
+            var unit = col.gameObject.GetComponent<BasicUnit>();
+            if (unit == null)
+                continue;
+            if(target == null)
+            {
+                target = unit;
+                continue;
+            }
+            if (Vector3.Distance(transform.position, target.transform.position) >
+                Vector3.Distance(transform.position, unit.transform.position))
+            {
+                target = unit;
+            }
+        }
     }
 }
