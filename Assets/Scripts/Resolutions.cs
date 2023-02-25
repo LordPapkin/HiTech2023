@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Resolutions : MonoBehaviour
 {
-    public Dropdown ResolutionDropdown;
+    public TMPro.TMP_Dropdown resolutionDropdown;
 
     Resolution[] resolutions;
 
@@ -13,7 +14,7 @@ public class Resolutions : MonoBehaviour
     {
         resolutions = Screen.resolutions;
 
-        ResolutionDropdown.ClearOptions();
+        resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
 
@@ -30,9 +31,9 @@ public class Resolutions : MonoBehaviour
             }
         }
 
-        ResolutionDropdown.AddOptions(options);
-        ResolutionDropdown.value = currentResolutionIndex;
-        ResolutionDropdown.RefreshShownValue();
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.RefreshShownValue();
 
     }
     
