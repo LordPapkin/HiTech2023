@@ -9,28 +9,25 @@ public class UnitSpawner : MonoBehaviour
     public static UnitSpawner Instance => instance;
     private static UnitSpawner instance;
 
-    //for test
-    [SerializeField] private UnitSO testUnit;
-
-    private void Update()
+    private void Awake()
     {
-        //just for test
-        if (Input.GetKeyDown(KeyCode.W))
+        if (instance == null)
         {
-            SpawnUnit(testUnit);
+            instance = this;
         }
     }
-
-    public void SpawnUnit(UnitSO unitType)
+    
+    public bool SpawnUnit(UnitSO unitType)
     {
         bool isSpawned = ResourceManager.Instance.SpendResources(unitType.UnitResource, unitType.UnitCost);
         if (!isSpawned)
         {
             Debug.LogWarning("Brak zasobów");
-            return;
+            return false;
         }
             
         Instantiate(unitType.UnitPrefab, transform.position, Quaternion.identity, transform);
+        return true;
     }
     
 }
