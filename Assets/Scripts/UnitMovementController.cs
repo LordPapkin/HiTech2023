@@ -10,19 +10,19 @@ public class UnitMovementController : MonoBehaviour
     private Vector3 target;
     private Quaternion toRotation;
     public Rigidbody unitRb;
-    public MovementWaypointsManager MovementWaypointsManager;
+    private MovementWaypointsManager movementWaypointsManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        target = MovementWaypointsManager.GetNextWP().position;
-
+        movementWaypointsManager = MovementWaypointsManager.Instance;
+        target = movementWaypointsManager.GetNextWP().position;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!MovementWaypointsManager.DestinationReached)
+        if (!movementWaypointsManager.DestinationReached)
         {
             Movement();
         }
@@ -44,7 +44,7 @@ public class UnitMovementController : MonoBehaviour
         }
         else
         {
-            target = MovementWaypointsManager.GetNextWP().position;
+            target = movementWaypointsManager.GetNextWP().position;
         }
     }
 }
