@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 595b0ccdd5d92ca4e8490ae83eb4b7ba, type: 3}
-  m_Name: RoombaMelee
+  m_Name: DroneSpecial
   m_EditorClassIdentifier: 
-  <NameString>k__BackingField: RoombaMelee
-  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: ee6efd529be36ae40aa406974a64ed77,
+  <NameString>k__BackingField: DroneSpecial
+  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: 7ff3faba381e9c0488bb64e36ed35d45,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,
       type: 2}
-    <Amount>k__BackingField: 5
-  <UnitCooldown>k__BackingField: 3
+    <Amount>k__BackingField: 15
+  <UnitCooldown>k__BackingField: 10
