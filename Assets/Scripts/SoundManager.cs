@@ -20,12 +20,18 @@ public class SoundManager : MonoBehaviour
     }
 
     public AudioSource Source;
-
+    public List<AudioClip> AudioClips;
     public Dictionary<SFX, AudioClip> ListSFX;
     // Start is called before the first frame update
     void Start()
     {
-        
+        ListSFX = new Dictionary<SFX, AudioClip>();
+        int i = 1;
+        foreach (AudioClip clip in AudioClips)
+        {
+            ListSFX.Add((SFX)i, clip);
+            i++;
+        }
     }
 
     // Update is called once per frame
