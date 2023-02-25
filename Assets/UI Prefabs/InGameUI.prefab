@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 251646060}
   - component: {fileID: 251646059}
   - component: {fileID: 251646058}
+  - component: {fileID: 4529368}
   m_Layer: 5
   m_Name: RespRangeT3
   m_TagString: Untagged
@@ -254,11 +255,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 251646060}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4529368}
+        m_TargetAssemblyTypeName: ButtonUnitSpawn, Assembly-CSharp
+        m_MethodName: SpawnUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &251646058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +317,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &4529368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251646056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToSpawn: {fileID: 11400000, guid: 7e25c81c2b36143429454983cbe7bd14, type: 2}
+  isLocked: 1
 --- !u!1 &258519585
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +479,7 @@ GameObject:
   - component: {fileID: 291904490}
   - component: {fileID: 291904489}
   - component: {fileID: 291904488}
+  - component: {fileID: 1995288726}
   m_Layer: 5
   m_Name: RespSpecialT2
   m_TagString: Untagged
@@ -557,11 +585,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 291904490}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1995288726}
+        m_TargetAssemblyTypeName: ButtonUnitSpawn, Assembly-CSharp
+        m_MethodName: SpawnUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &291904488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,6 +647,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1995288726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291904486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  isLocked: 1
 --- !u!1 &317775989
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +674,7 @@ GameObject:
   - component: {fileID: 317775993}
   - component: {fileID: 317775992}
   - component: {fileID: 317775991}
+  - component: {fileID: 690541203}
   m_Layer: 5
   m_Name: RespRangeT2
   m_TagString: Untagged
@@ -725,11 +780,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 317775993}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 690541203}
+        m_TargetAssemblyTypeName: ButtonUnitSpawn, Assembly-CSharp
+        m_MethodName: SpawnUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &317775991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,6 +842,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &690541203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317775989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  isLocked: 1
 --- !u!1 &418665489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,6 +1438,7 @@ GameObject:
   - component: {fileID: 690349692}
   - component: {fileID: 690349691}
   - component: {fileID: 690349690}
+  - component: {fileID: 1942552427}
   m_Layer: 5
   m_Name: RespRangeT1
   m_TagString: Untagged
@@ -1462,11 +1544,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 690349692}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1942552427}
+        m_TargetAssemblyTypeName: ButtonUnitSpawn, Assembly-CSharp
+        m_MethodName: SpawnUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &690349690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,6 +1606,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1942552427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690349688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  isLocked: 0
 --- !u!1 &727300740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,7 +1778,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 878327886}
   m_OnClick:
     m_PersistentCalls:
@@ -1745,6 +1853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: 7e25c81c2b36143429454983cbe7bd14, type: 2}
+  isLocked: 1
 --- !u!1 &959708341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,6 +2002,7 @@ GameObject:
   - component: {fileID: 963381238}
   - component: {fileID: 963381237}
   - component: {fileID: 963381240}
+  - component: {fileID: 2054010588}
   m_Layer: 5
   m_Name: Tier 2
   m_TagString: Untagged
@@ -1998,11 +2108,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 963381238}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2054010588}
+        m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
+        m_MethodName: UnlockTierUnits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &963381240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,6 +2170,26 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &2054010588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963381235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ac1b5862ce3147939c325508608cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tierUnitsButtons:
+  - {fileID: 788219719}
+  - {fileID: 690541203}
+  - {fileID: 1995288726}
+  unlockCost:
+    <ResourceType>k__BackingField: {fileID: 11400000, guid: 65a3d6bc1b28e3549bcc8e0d6b8208a7,
+      type: 2}
+    <Amount>k__BackingField: 20
 --- !u!1 &1099191945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2137,6 +2279,7 @@ GameObject:
   - component: {fileID: 1112853111}
   - component: {fileID: 1112853110}
   - component: {fileID: 1112853109}
+  - component: {fileID: 788219719}
   m_Layer: 5
   m_Name: RespMeleeT2
   m_TagString: Untagged
@@ -2242,11 +2385,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1112853111}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 788219719}
+        m_TargetAssemblyTypeName: ButtonUnitSpawn, Assembly-CSharp
+        m_MethodName: SpawnUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1112853109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,6 +2447,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &788219719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112853107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  isLocked: 1
 --- !u!1 &1207611503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2557,6 +2726,7 @@ GameObject:
   - component: {fileID: 1444786840}
   - component: {fileID: 1444786839}
   - component: {fileID: 1444786838}
+  - component: {fileID: 175536090}
   m_Layer: 5
   m_Name: RespSpecialT3
   m_TagString: Untagged
@@ -2662,11 +2832,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1444786840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 175536090}
+        m_TargetAssemblyTypeName: ButtonUnitSpawn, Assembly-CSharp
+        m_MethodName: SpawnUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1444786838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2712,6 +2894,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &175536090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444786836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToSpawn: {fileID: 11400000, guid: 7e25c81c2b36143429454983cbe7bd14, type: 2}
+  isLocked: 1
 --- !u!1 &1448546009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2725,6 +2921,7 @@ GameObject:
   - component: {fileID: 1448546012}
   - component: {fileID: 1448546011}
   - component: {fileID: 1448546014}
+  - component: {fileID: 1257203866}
   m_Layer: 5
   m_Name: Tier 3
   m_TagString: Untagged
@@ -2830,11 +3027,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1448546012}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1257203866}
+        m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
+        m_MethodName: UnlockTierUnits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1448546014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2880,6 +3089,26 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1257203866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448546009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ac1b5862ce3147939c325508608cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tierUnitsButtons:
+  - {fileID: 2026457162}
+  - {fileID: 4529368}
+  - {fileID: 175536090}
+  unlockCost:
+    <ResourceType>k__BackingField: {fileID: 11400000, guid: 65a3d6bc1b28e3549bcc8e0d6b8208a7,
+      type: 2}
+    <Amount>k__BackingField: 40
 --- !u!1 &1532314391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3268,7 +3497,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1667072781}
   m_OnClick:
     m_PersistentCalls:
@@ -4222,7 +4451,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1960464325}
   m_OnClick:
     m_PersistentCalls:
@@ -4297,6 +4526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  isLocked: 0
 --- !u!1 &2093844832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,6 +4675,7 @@ GameObject:
   - component: {fileID: 2108031046}
   - component: {fileID: 2108031045}
   - component: {fileID: 2108031044}
+  - component: {fileID: 1514664133}
   m_Layer: 5
   m_Name: RespSpecialT1
   m_TagString: Untagged
@@ -4550,11 +4781,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2108031046}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1514664133}
+        m_TargetAssemblyTypeName: ButtonUnitSpawn, Assembly-CSharp
+        m_MethodName: SpawnUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2108031044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4600,6 +4843,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1514664133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108031042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  isLocked: 0
 --- !u!1 &1160122872728708247
 GameObject:
   m_ObjectHideFlags: 0

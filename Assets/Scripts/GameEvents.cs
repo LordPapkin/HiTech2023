@@ -6,10 +6,17 @@ using UnityEngine;
 public static class GameEvents
 {
     //template
-    private static event Action OnSomethingHappen;
+    public static event Action OnSomethingHappen;
 
     public static void SomethingHappen()
     {
         OnSomethingHappen?.Invoke();
+    }
+
+    public static event Action OnResourceAmountChange;
+
+    public static void ResourceAmountChange()
+    {
+        OnResourceAmountChange?.Invoke();
     }
 }
