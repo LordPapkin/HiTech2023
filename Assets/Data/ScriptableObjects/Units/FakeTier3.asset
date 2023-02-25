@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 595b0ccdd5d92ca4e8490ae83eb4b7ba, type: 3}
-  m_Name: BasicUnit
+  m_Name: FakeTier3
   m_EditorClassIdentifier: 
-  <NameString>k__BackingField: TestUnit
+  <NameString>k__BackingField: FakeTier3
   <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: a9bf692be2b7fc045b89dee26fc478f2,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,
       type: 2}
     <Amount>k__BackingField: 5
-  <UnitCooldown>k__BackingField: 1
+  - <ResourceType>k__BackingField: {fileID: 11400000, guid: 65a3d6bc1b28e3549bcc8e0d6b8208a7,
+      type: 2}
+    <Amount>k__BackingField: 5
+  <UnitCooldown>k__BackingField: 5

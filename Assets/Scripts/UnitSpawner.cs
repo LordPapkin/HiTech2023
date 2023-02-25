@@ -19,7 +19,7 @@ public class UnitSpawner : MonoBehaviour
     
     public bool SpawnUnit(UnitSO unitType)
     {
-        bool isSpawned = ResourceManager.Instance.SpendResources(unitType.UnitResource, unitType.UnitCost);
+        bool isSpawned = ResourceManager.Instance.SpendResources(unitType.UnitCost);
         if (!isSpawned)
         {
             Debug.LogWarning("Brak zasobów");

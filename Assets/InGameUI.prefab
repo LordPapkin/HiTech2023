@@ -1564,6 +1564,7 @@ GameObject:
   - component: {fileID: 878327886}
   - component: {fileID: 878327885}
   - component: {fileID: 878327884}
+  - component: {fileID: 2026457162}
   m_Layer: 5
   m_Name: RespMeleeT3
   m_TagString: Untagged
@@ -1673,7 +1674,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 878327886}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2026457162}
+        m_TargetAssemblyTypeName: ButtonUnitSpawn, Assembly-CSharp
+        m_MethodName: SpawnUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &878327884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1719,6 +1732,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &2026457162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878327882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToSpawn: {fileID: 11400000, guid: 7e25c81c2b36143429454983cbe7bd14, type: 2}
 --- !u!1 &959708341
 GameObject:
   m_ObjectHideFlags: 0
