@@ -28,11 +28,20 @@ public class ResourceManager : MonoBehaviour
     private void Update()
     {
         // for test
-        if(Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
+        {
             AddResource(resourcesList.List[0], 10);
+            AddResource(resourcesList.List[1], 10);
+        }
+        
         if (Input.GetKeyDown(KeyCode.S))
         {
-            SpendResources(resourcesList.List[0], 100);
+            var cost = new ResourceCost
+            {
+                ResourceType = resourcesList.List[0],
+                Amount = 100
+            };
+            SpendResources(cost);
         }
 
         if (Input.GetKeyDown(KeyCode.D))
@@ -49,11 +58,26 @@ public class ResourceManager : MonoBehaviour
         resourceDictionary[type] += amount;
     }
 
-    public bool SpendResources(ResourceSO type, int amount)
+    public bool SpendResources(ResourceCost resourceCost)
     {
-        if (resourceDictionary[type] < amount)
+        if (resourceDictionary[resourceCost.ResourceType] < resourceCost.Amount)
             return false;
-        resourceDictionary[type] -= amount;
+        resourceDictionary[resourceCost.ResourceType] -= resourceCost.Amount;
+        return true;
+    }
+
+    public bool SpendResources(ResourceCost[] resourceCostArray)
+    {
+        foreach (var resourceCost in resourceCostArray)
+        {
+            if (resourceDictionary[resourceCost.ResourceType] < resourceCost.Amount)
+                return false;
+        }
+        
+        foreach (var resourceCost in resourceCostArray)
+        {
+            resourceDictionary[resourceCost.ResourceType] -= resourceCost.Amount;
+        }
         return true;
     }
     
