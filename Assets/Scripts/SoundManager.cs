@@ -13,7 +13,10 @@ public class SoundManager : MonoBehaviour
         RoombaBuilt=5,
         DroneBuilt=6,
         KerfusBuilt=7,
-        EnemyBaseReached=8
+        EnemyBaseReached=8,
+        RoombaOnDeath=9,
+        DroneOnDeath=10,
+        KerfusOnDeath=11
     }
 
     public AudioSource Source;
