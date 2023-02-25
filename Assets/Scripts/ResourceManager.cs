@@ -6,15 +6,16 @@ using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
-    public static ResourceManager Instance { get; private set; }
+    public static ResourceManager Instance => instance;
+    private static ResourceManager instance;
     private Dictionary<ResourceSO, int> resourceDictionary;
     private ResourcesListSO resourcesList;
     
     private void Awake()
     {
-        if (Instance == null)
+        if (instance == null)
         {
-            Instance = this;
+            instance = this;
         }
 
         resourcesList = GameResources.Instance.ResourcesList;
@@ -54,30 +55,48 @@ public class ResourceManager : MonoBehaviour
     {
         if(!resourceDictionary.ContainsKey(type))
             return;
-        
+
         resourceDictionary[type] += amount;
+        GameEvents.ResourceAmountChange();
     }
 
     public bool SpendResources(ResourceCost resourceCost)
     {
         if (resourceDictionary[resourceCost.ResourceType] < resourceCost.Amount)
             return false;
+        
         resourceDictionary[resourceCost.ResourceType] -= resourceCost.Amount;
+        GameEvents.ResourceAmountChange();
         return true;
     }
 
     public bool SpendResources(ResourceCost[] resourceCostArray)
+    {
+        if (!CanAfford(resourceCostArray))
+            return false;
+        
+        foreach (var resourceCost in resourceCostArray)
+        {
+            resourceDictionary[resourceCost.ResourceType] -= resourceCost.Amount;
+        }
+        GameEvents.ResourceAmountChange();
+        return true;
+    }
+
+    public bool CanAfford(ResourceCost[] resourceCostArray)
     {
         foreach (var resourceCost in resourceCostArray)
         {
             if (resourceDictionary[resourceCost.ResourceType] < resourceCost.Amount)
                 return false;
         }
-        
-        foreach (var resourceCost in resourceCostArray)
-        {
-            resourceDictionary[resourceCost.ResourceType] -= resourceCost.Amount;
-        }
+        return true;
+    }
+    
+    public bool CanAfford(ResourceCost resourceCost)
+    {
+        if (resourceDictionary[resourceCost.ResourceType] < resourceCost.Amount)
+            return false;
         return true;
     }
     
