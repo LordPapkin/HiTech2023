@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class MovementWaypointsManager : MonoBehaviour
 {
-    public bool DestinationReached { get; private set; } = false;
-    public Transform currentWaypoint;
     public Queue<Transform> WaypointsQueue;
 
     public List<Transform> Waypoints;
@@ -30,16 +28,13 @@ public class MovementWaypointsManager : MonoBehaviour
         }
     }
 
-    public Transform GetNextWP()
+    public Queue<Transform> GetWaypointsQueue()
     {
-        if (WaypointsQueue.Count==0)
+        Queue<Transform> waypointsQueue = new Queue<Transform>();
+        foreach (Transform WP in Waypoints)
         {
-            Debug.Log("Journey finished");
-            DestinationReached = true;
-            return currentWaypoint;
+            waypointsQueue.Enqueue(WP);
         }
-        Debug.Log("GetNext");
-        currentWaypoint = WaypointsQueue.Dequeue();
-        return currentWaypoint;
+        return waypointsQueue;
     }
 }
