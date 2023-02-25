@@ -12,7 +12,7 @@ public class ExitGame : MonoBehaviour
     private IEnumerator ButtonExitCor()
     {
         Debug.Log("Cuhj");
-        //do wyœwietlenia VHS'a
+        //do wyï¿½wietlenia VHS'a
         yield return new WaitForSeconds(1);
 
 #if UNITY_EDITOR
