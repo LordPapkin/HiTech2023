@@ -2,22 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net.Sockets;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class LeanInAnnimation : MonoBehaviour
 {
-    void Start()
+    void OnEnable()
     {
         transform.localScale = Vector2.zero;
-    }
-
-    public void Open()
-    {
         transform.LeanScale(Vector2.one, 0.8f);
     }
-
-    public void Close()
-    {
-        transform.LeanScale(Vector2.zero, 1f).setEaseInBack();
-    }
-
 }

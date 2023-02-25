@@ -15,7 +15,8 @@ MonoBehaviour:
   <NameString>k__BackingField: TestUnit
   <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: a9bf692be2b7fc045b89dee26fc478f2,
     type: 3}
-  <UnitResource>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,
-    type: 2}
-  <UnitCost>k__BackingField: 5
-  <UnitCooldown>k__BackingField: 5
+  <UnitCost>k__BackingField:
+  - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,
+      type: 2}
+    <Amount>k__BackingField: 5
+  <UnitCooldown>k__BackingField: 1
