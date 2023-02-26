@@ -8428,6 +8428,7 @@ GameObject:
   - component: {fileID: 4763094505739926554}
   - component: {fileID: 4763094505739926552}
   - component: {fileID: 4763094505739926553}
+  - component: {fileID: 1302618962}
   m_Layer: 5
   m_Name: TimerBackground
   m_TagString: Untagged
@@ -8494,6 +8495,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1302618962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4763094505739926555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8289cd98864ad2f47a73533d7d6fc1f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 5461877554840027623}
 --- !u!1 &4763094505877888864
 GameObject:
   m_ObjectHideFlags: 0
