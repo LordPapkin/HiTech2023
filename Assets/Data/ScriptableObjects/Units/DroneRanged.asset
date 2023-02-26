@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DroneRanged
   m_EditorClassIdentifier: 
   <NameString>k__BackingField: DroneRanged
-  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: 7ff3faba381e9c0488bb64e36ed35d45,
+  <UnitPrefab>k__BackingField: {fileID: 1130666211978742515, guid: 3fb904e8d8de1c04eabf00037da7afc2,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,

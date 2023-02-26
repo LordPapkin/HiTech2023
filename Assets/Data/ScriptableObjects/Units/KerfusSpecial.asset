@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KerfusSpecial
   m_EditorClassIdentifier: 
   <NameString>k__BackingField: KerfusSpecial
-  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: 1742efaa113ff304088919f815e6a97a,
+  <UnitPrefab>k__BackingField: {fileID: 7034663137813700663, guid: a3e17c0701c54f543bcfa503d8613473,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,

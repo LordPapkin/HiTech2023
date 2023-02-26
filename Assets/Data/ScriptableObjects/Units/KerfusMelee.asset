@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KerfusMelee
   m_EditorClassIdentifier: 
   <NameString>k__BackingField: KerfusMelee
-  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: 1742efaa113ff304088919f815e6a97a,
+  <UnitPrefab>k__BackingField: {fileID: 947770938386420524, guid: 91ca8bfb728aefd4b902a2b92551c1fa,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,

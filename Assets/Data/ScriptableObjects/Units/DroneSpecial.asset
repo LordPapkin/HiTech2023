@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DroneSpecial
   m_EditorClassIdentifier: 
   <NameString>k__BackingField: DroneSpecial
-  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: 7ff3faba381e9c0488bb64e36ed35d45,
+  <UnitPrefab>k__BackingField: {fileID: 8929494564122046421, guid: d942156aef9f88a45b640fca154d0193,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RoombaSpecial
   m_EditorClassIdentifier: 
   <NameString>k__BackingField: RoombaSpecial
-  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: ee6efd529be36ae40aa406974a64ed77,
+  <UnitPrefab>k__BackingField: {fileID: 6959573664173046181, guid: 4dd100bffc6080644a58677398041b10,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,

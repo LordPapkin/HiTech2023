@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RoombaRanged
   m_EditorClassIdentifier: 
   <NameString>k__BackingField: RoombaRanged
-  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: ee6efd529be36ae40aa406974a64ed77,
+  <UnitPrefab>k__BackingField: {fileID: 430641906529061228, guid: 88c69657ab7bd8c48b7d8a593c87f479,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,

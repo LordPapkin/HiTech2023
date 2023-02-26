@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KerfusRanged
   m_EditorClassIdentifier: 
   <NameString>k__BackingField: KerfusRanged
-  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: 1742efaa113ff304088919f815e6a97a,
+  <UnitPrefab>k__BackingField: {fileID: 3902669665683964805, guid: 258bb1fc2c10da94c85d9668d4ced14d,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,

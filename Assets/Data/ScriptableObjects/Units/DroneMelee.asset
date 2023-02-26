@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DroneMelee
   m_EditorClassIdentifier: 
   <NameString>k__BackingField: DroneMelee
-  <UnitPrefab>k__BackingField: {fileID: 6931867224231487536, guid: 7ff3faba381e9c0488bb64e36ed35d45,
+  <UnitPrefab>k__BackingField: {fileID: 4918087890651555293, guid: 870ff0d26f3d6784f9d52305c8f0ad4a,
     type: 3}
   <UnitCost>k__BackingField:
   - <ResourceType>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,
