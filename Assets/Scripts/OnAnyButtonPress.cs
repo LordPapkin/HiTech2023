@@ -13,7 +13,7 @@ public class OnAnyButtonPress : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            MoveToScene(0);
+            MoveToScene(1);
         }
     }
 }
