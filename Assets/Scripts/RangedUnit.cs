@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class RangedUnit : BasicUnit
 {
-    [SerializeField] private int shotDamage;
     [SerializeField] private float searchRange;
     [SerializeField] private float searchCooldown;
     [SerializeField] private float fireCooldown;
@@ -71,7 +70,6 @@ public class RangedUnit : BasicUnit
             return;
         GameObject spawnedProjectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, quaternion.identity, projectileContainer);
         UnitProjectile projectile = spawnedProjectile.GetComponent<UnitProjectile>();
-        projectile.SetDamageToUnits(shotDamage);
         projectile.SetTarget(target);
     }
 }

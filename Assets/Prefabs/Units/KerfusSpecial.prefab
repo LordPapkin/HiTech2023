@@ -30,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7034663137813700663}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e73c5e9013662e40be8e0ccf3cb8ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 5
+  velocity: 8
   rotationSpeed: 2
   unitRb: {fileID: 8433439970097046295}
 --- !u!114 &7095332125361378875
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b9983a9228fb94f9309f74e6b91b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmountMax: 100
+  healthAmountMax: 250
 --- !u!114 &3196752726706770547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   healthSystem: {fileID: 0}
   unitMovementController: {fileID: 0}
   damage: 0
-  unitTier: 0
+  unitTier: 3
 --- !u!1001 &1241444744922430481
 PrefabInstance:
   m_ObjectHideFlags: 0

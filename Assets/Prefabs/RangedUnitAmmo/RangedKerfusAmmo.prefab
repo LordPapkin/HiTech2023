@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6610277025052867048}
   - component: {fileID: -4091614516875039008}
   m_Layer: 0
-  m_Name: RangedUnitAmmo
+  m_Name: RangedKerfusAmmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,5 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc075e2c7c3c8843a55181f9d01b73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  moveSpeed: 20
+  damage: 5
+  moveSpeed: 100
