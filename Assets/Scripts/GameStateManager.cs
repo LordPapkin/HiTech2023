@@ -20,6 +20,9 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private string levelName;
     [SerializeField] private float timeToWin;
     [SerializeField] private int enemyBaseHealth;
+
+    [SerializeField] private GameObject win;
+    [SerializeField] private GameObject lose;
     
     private int score;
     private int highScore;
@@ -61,6 +64,14 @@ public class GameStateManager : MonoBehaviour
         PlayerPrefs.SetInt("tutorialCount" + levelName, tutorialShownCount);
         ChangeSpeed(GameSpeed.Normal);
     }
+
+    public void BaseDamaged(int value)
+    {
+        enemyBaseHealth -= value;
+        
+        if(enemyBaseHealth < 0)
+            WonGame();
+    }
     
     public void ChangeSpeed(GameSpeed gameSpeed)
     {
@@ -82,6 +93,11 @@ public class GameStateManager : MonoBehaviour
 
     private void LostGame()
     {
-        Debug.LogError("NO END GAME LOGIC!!!");
+        lose.SetActive(true);
+    }
+
+    private void WonGame()
+    {
+        win.SetActive(true);
     }
 }

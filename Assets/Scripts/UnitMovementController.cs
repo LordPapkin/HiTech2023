@@ -14,10 +14,12 @@ public class UnitMovementController : MonoBehaviour
     private Queue<Transform> waypoints;
     private bool destinationReached = false;
     private int n = 0;
+    private BasicUnit unit;
 
     // Start is called before the first frame update
     void Start()
     {
+        unit = GetComponent<BasicUnit>();
         movementWaypointsManager = MovementWaypointsManager.Instance;
         waypoints = movementWaypointsManager.GetWaypointsQueue();
         target = waypoints.Dequeue().position;
@@ -52,6 +54,8 @@ public class UnitMovementController : MonoBehaviour
             }
 
             destinationReached = (waypoints.Count == 0);
+            if(destinationReached)
+                unit.ArriveInBase();
         }
     }
 }
