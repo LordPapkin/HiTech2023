@@ -815,6 +815,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3703329086581113763, guid: 86faa325096387448bfd0f247a8e0755, type: 3}
+      propertyPath: maxTimeToSpawnNextTurret
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3703329086581113763, guid: 86faa325096387448bfd0f247a8e0755, type: 3}
+      propertyPath: minTimeToSpawnNextTurret
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86faa325096387448bfd0f247a8e0755, type: 3}
 --- !u!4 &1664319126619840022 stripped
