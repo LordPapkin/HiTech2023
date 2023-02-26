@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1775526848701563280}
   - component: {fileID: 1775526848701563281}
+  - component: {fileID: 362214354999286023}
+  - component: {fileID: 987936575}
   m_Layer: 0
   m_Name: GlobalPostProcess
   m_TagString: Untagged
@@ -48,4 +50,41 @@ MonoBehaviour:
   priority: 1
   blendDistance: 0
   weight: 1
+  sharedProfile: {fileID: 11400000, guid: c0b4ba7c453485a4ba4fb057482437f8, type: 2}
+--- !u!114 &362214354999286023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775526848701563284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
   sharedProfile: {fileID: 11400000, guid: 250f6778a1bb7c14c909130927991987, type: 2}
+--- !u!95 &987936575
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775526848701563284}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d769a83a9855faf41bea46e13e257805, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
