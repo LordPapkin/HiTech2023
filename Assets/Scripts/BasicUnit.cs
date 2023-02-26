@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class BasicUnit : MonoBehaviour
 {
-    [SerializeField] private HealthSystem healthSystem;
-    [SerializeField] private UnitMovementController unitMovementController;
+    [SerializeField] protected HealthSystem healthSystem;
+    [SerializeField] protected UnitMovementController unitMovementController;
+    [SerializeField] protected int damage;
 
     private void Awake()
     {
