@@ -10,27 +10,16 @@ public class CameraController : MonoBehaviour
     public Vector3 maxConstraints;
 
     public float cameraVelocity;
+    private float velocityNormal;
+    private float velocityHaiai;
 
     // Start is called before the first frame update
     void Start()
     {
         minConstraints = new Vector3(-15f, 5f, 0f);
         maxConstraints = new Vector3(15f, 18f, 100f);
-    }
-
-    public bool IsInBounds()
-    {
-        if (transform.position.x >= minConstraints.x && transform.position.x <= maxConstraints.x)
-        {
-            if (transform.position.y >= minConstraints.y && transform.position.y <= maxConstraints.y)
-            {
-                if (transform.position.z >= minConstraints.z && transform.position.z <= maxConstraints.z)
-                {
-                    return true;
-                }
-            }
-        }
-        return false;
+        velocityNormal = cameraVelocity;
+        velocityHaiai = 2.5f * cameraVelocity;
     }
 
     private void Update()
@@ -43,7 +32,40 @@ public class CameraController : MonoBehaviour
         if (Input.GetKey(KeyCode.D)) moveDir.z = 1;
         moveDir.y = Input.mouseScrollDelta.y * 7f;
 
+        if (Input.GetKey(KeyCode.LeftShift))
+            cameraVelocity = velocityHaiai;
+        else
+            cameraVelocity = velocityNormal;
+
+        if (transform.position.x <= -15)
+        {
+            moveDir.x += 1.1f;
+        }
+        if (transform.position.x >= 15)
+        {
+            moveDir.x -= 1.1f;
+        }
+        if (transform.position.z <= 0)
+        {
+            moveDir.z += 1.1f;
+        }
+        if (transform.position.z >= 100)
+        {
+            moveDir.z -= 1.1f;
+        }
+        
+        if (transform.position.y <= 5)
+        {
+            moveDir.y += 2.1f;
+        }
+        if (transform.position.y >= 18)
+        {
+            moveDir.y -= 2.1f;
+        }
+        
         transform.position += moveDir * cameraVelocity * Time.deltaTime;
+        //minConstraints = new Vector3(-15f, 5f, 0f);
+        //maxConstraints = new Vector3(15f, 18f, 100f);
 
     }
 }
