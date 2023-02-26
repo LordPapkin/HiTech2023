@@ -13,7 +13,7 @@ public class ExitGame : MonoBehaviour
     {
         Debug.Log("Cuhj");
         //do wy�wietlenia VHS'a
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
 
 #if UNITY_EDITOR
 UnityEditor.EditorApplication.isPlaying = false;
