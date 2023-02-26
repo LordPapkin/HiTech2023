@@ -3536,6 +3536,7 @@ GameObject:
   - component: {fileID: 2484006004169317151}
   - component: {fileID: 2484006004169317150}
   - component: {fileID: 928941995194382694}
+  - component: {fileID: 4076110}
   m_Layer: 5
   m_Name: ButtonHaiyay
   m_TagString: Untagged
@@ -3670,6 +3671,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4076110}
+        m_TargetAssemblyTypeName: TimeScaleButton, Assembly-CSharp
+        m_MethodName: SetNormal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &928941995194382694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3715,6 +3728,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &4076110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2484006004169317148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdda9f42f311924b87e50f0c18982cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2521365857465820151
 GameObject:
   m_ObjectHideFlags: 0
@@ -4562,6 +4587,7 @@ GameObject:
   - component: {fileID: 2854907462489680286}
   - component: {fileID: 2854907462489680287}
   - component: {fileID: 928941996175148544}
+  - component: {fileID: 152832654}
   m_Layer: 5
   m_Name: ButtonPause
   m_TagString: Untagged
@@ -4684,6 +4710,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 152832654}
+        m_TargetAssemblyTypeName: TimeScaleButton, Assembly-CSharp
+        m_MethodName: SetPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &928941996175148544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4729,6 +4767,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &152832654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2854907462489680285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdda9f42f311924b87e50f0c18982cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2854907464097225533
 GameObject:
   m_ObjectHideFlags: 0
@@ -5342,6 +5392,7 @@ GameObject:
   - component: {fileID: 3303723769763563638}
   - component: {fileID: 3303723769763563639}
   - component: {fileID: 928941995385190379}
+  - component: {fileID: 565897844}
   m_Layer: 5
   m_Name: ButtonSpeedo
   m_TagString: Untagged
@@ -5476,6 +5527,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 565897844}
+        m_TargetAssemblyTypeName: TimeScaleButton, Assembly-CSharp
+        m_MethodName: SetFast
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &928941995385190379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5521,6 +5584,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &565897844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3303723769763563641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdda9f42f311924b87e50f0c18982cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3303723770630438482
 GameObject:
   m_ObjectHideFlags: 0
@@ -10533,6 +10608,7 @@ GameObject:
   - component: {fileID: 5203879058959905379}
   - component: {fileID: 5203879058959905380}
   - component: {fileID: 928941995539556306}
+  - component: {fileID: 559605689}
   m_Layer: 5
   m_Name: BestiaryExitButton
   m_TagString: Untagged
@@ -10655,6 +10731,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 559605689}
+        m_TargetAssemblyTypeName: TimeScaleButton, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &928941995539556306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10716,6 +10804,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &559605689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5203879058959905382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdda9f42f311924b87e50f0c18982cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5203879059032399831
 GameObject:
   m_ObjectHideFlags: 0
@@ -10729,6 +10829,7 @@ GameObject:
   - component: {fileID: 5203879059032399828}
   - component: {fileID: 5203879059032399829}
   - component: {fileID: 928941995484613217}
+  - component: {fileID: 835071491}
   m_Layer: 5
   m_Name: BestiaryButton
   m_TagString: Untagged
@@ -10851,6 +10952,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 835071491}
+        m_TargetAssemblyTypeName: TimeScaleButton, Assembly-CSharp
+        m_MethodName: SetPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &928941995484613217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10896,6 +11009,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &835071491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5203879059032399831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdda9f42f311924b87e50f0c18982cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5203879059062562857
 GameObject:
   m_ObjectHideFlags: 0
@@ -11660,6 +11785,7 @@ GameObject:
   - component: {fileID: 5203879059734950038}
   - component: {fileID: 5203879059734950039}
   - component: {fileID: 928941994782074151}
+  - component: {fileID: 1239338237}
   m_Layer: 5
   m_Name: ResumeB
   m_TagString: Untagged
@@ -11782,6 +11908,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1239338237}
+        m_TargetAssemblyTypeName: TimeScaleButton, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &928941994782074151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11843,6 +11981,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1239338237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5203879059734949993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdda9f42f311924b87e50f0c18982cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5203879059772805968
 GameObject:
   m_ObjectHideFlags: 0
