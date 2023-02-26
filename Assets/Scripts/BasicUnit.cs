@@ -15,11 +15,17 @@ public class BasicUnit : MonoBehaviour
     private void Awake()
     {
         healthSystem.Died += OnDied;
-        
+    }
+
+    public void ArriveInBase()
+    {
+        GameStateManager.Instance.BaseDamaged(damage);
+        Destroy(this.gameObject);
     }
 
     private void OnDied(object sender, EventArgs e)
     {
        Destroy(this.gameObject);
     }
+    
 }
