@@ -31,6 +31,11 @@ public class HealthSystem : MonoBehaviour
         healthAmount = healthAmountMax;
         Healed?.Invoke(this, EventArgs.Empty);  
     }
+    public void Heal(int ammount)
+    {
+        healthAmount += ammount;
+        Healed?.Invoke(this, EventArgs.Empty);  
+    }
     
     public float GetHealthAmountNormalized()
     {
