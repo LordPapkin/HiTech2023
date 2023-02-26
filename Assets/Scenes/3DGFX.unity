@@ -8866,14 +8866,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900604480}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: 2.51, z: -34}
+  m_LocalRotation: {x: 0.056877345, y: -0.8608818, z: 0.09874295, w: 0.49588042}
+  m_LocalPosition: {x: 6.6, y: 5.58, z: -18.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.086, y: -120.115, z: 0}
 --- !u!114 &1900604484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8897,7 +8897,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -9498,6 +9498,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Kerfus 2 GFX '
       objectReference: {fileID: 0}
+    - target: {fileID: 8566070180367236530, guid: d094ea121805fff42a9664fafaa3ccb1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566070180367236530, guid: d094ea121805fff42a9664fafaa3ccb1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566070180367236530, guid: d094ea121805fff42a9664fafaa3ccb1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 70
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d094ea121805fff42a9664fafaa3ccb1, type: 3}
 --- !u!1001 &664527490527524979
@@ -9584,7 +9599,7 @@ PrefabInstance:
     - target: {fileID: 218538614111616972, guid: 44ba12cb59f0edd4284f2adf8119dcf2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.0889874
+      value: -5.77
       objectReference: {fileID: 0}
     - target: {fileID: 218538614111616972, guid: 44ba12cb59f0edd4284f2adf8119dcf2,
         type: 3}
@@ -9765,6 +9780,75 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1775526849622062765
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3669372
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -39.787693
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -80.92759
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563280, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775526848701563284, guid: d34ff287e8459d14c8fa293eb537014a,
+        type: 3}
+      propertyPath: m_Name
+      value: GlobalPostProcess
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d34ff287e8459d14c8fa293eb537014a, type: 3}
 --- !u!33 &1919147509085449635
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10007,6 +10091,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kerfus 3 GFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798016004511139679, guid: ffe913a4f13ac6448acbb67d5fc6ad1d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798016004511139679, guid: ffe913a4f13ac6448acbb67d5fc6ad1d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798016004511139679, guid: ffe913a4f13ac6448acbb67d5fc6ad1d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffe913a4f13ac6448acbb67d5fc6ad1d, type: 3}
@@ -10608,6 +10707,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kerfus 1 GFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163436874897325547, guid: 9fd5920a725c44a4eb44c5f23e376534,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163436874897325547, guid: 9fd5920a725c44a4eb44c5f23e376534,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163436874897325547, guid: 9fd5920a725c44a4eb44c5f23e376534,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fd5920a725c44a4eb44c5f23e376534, type: 3}
