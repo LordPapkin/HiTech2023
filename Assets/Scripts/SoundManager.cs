@@ -6,18 +6,18 @@ public class SoundManager : MonoBehaviour
 {
     public enum SFX
     {
-        Gunshot=1,
-        TowerShot=2,
-        TowerDestroyed=3,
-        TowerPlaced=4,
-        RoombaBuilt=5,
-        DroneBuilt=6,
-        KerfusBuilt=7,
-        EnemyBaseReached=8,
-        RoombaOnDeath=9,
-        DroneOnDeath=10,
-        KerfusOnDeath=11,
-        MoneyClick=12
+        Gunshot=0,
+        TowerShot=1,
+        TowerDestroyed=2,
+        TowerPlaced=3,
+        RoombaBuilt=4,
+        DroneBuilt=5,
+        KerfusBuilt=6,
+        EnemyBaseReached=7,
+        RoombaOnDeath=8,
+        DroneOnDeath=9,
+        KerfusOnDeath=10,
+        MoneyClick=11
     }
 
     public AudioSource Source;
@@ -41,7 +41,7 @@ public class SoundManager : MonoBehaviour
         if (ListSFX.TryGetValue(clip, out tmp))
         {
             Source.clip = tmp;
-            Source.Play();
+            Source.PlayOneShot(tmp);
         }
     }
 }
