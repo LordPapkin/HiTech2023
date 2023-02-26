@@ -19,4 +19,11 @@ public static class GameEvents
     {
         OnResourceAmountChange?.Invoke();
     }
+
+    public static event Action OnTutorialShow;
+
+    public static void ShowTutorial()
+    {
+        OnTutorialShow?.Invoke();
+    }
 }

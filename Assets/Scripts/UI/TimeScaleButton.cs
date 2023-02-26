@@ -6,52 +6,30 @@ using UnityEngine;
 
 public class TimeScaleButton : MonoBehaviour
 {
-    private enum GameSpeed
-    {
-        Normal,
-        Fast,
-        Paused
-    }
-
     private static bool isFast;
-
+    
     public void SetPause()
     {
-        ChangeSpeed(GameSpeed.Paused);
+        GameStateManager.Instance.ChangeSpeed(GameStateManager.GameSpeed.Paused);
     }
 
     public void SetFast()
     {
-        ChangeSpeed(GameSpeed.Fast);
+        GameStateManager.Instance.ChangeSpeed(GameStateManager.GameSpeed.Fast);
+        isFast = true;
     }
 
     public void SetNormal()
     {
-        ChangeSpeed(GameSpeed.Normal);
+        GameStateManager.Instance.ChangeSpeed(GameStateManager.GameSpeed.Normal);
+        isFast = false;
     }
 
     public void ResumeGame()
     {
-        ChangeSpeed(isFast ? GameSpeed.Fast : GameSpeed.Normal);
+        GameStateManager.Instance.ChangeSpeed(isFast ? GameStateManager.GameSpeed.Fast : GameStateManager.GameSpeed.Normal);
     }
 
-    private void ChangeSpeed(GameSpeed gameSpeed)
-    {
-        switch (gameSpeed)
-        {
-            case (GameSpeed.Normal):
-                Time.timeScale = 1f;
-                isFast = false;
-                break;
-            case (GameSpeed.Fast):
-                Time.timeScale = 1.7f;
-                isFast = true;
-                break;
-            case (GameSpeed.Paused):
-                Time.timeScale = 0f;
-                break;
-                
-        }
-    }
+    
 
 }
