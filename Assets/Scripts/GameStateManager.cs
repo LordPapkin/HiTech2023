@@ -30,12 +30,15 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private GameObject odlHighScoreUI;
     [SerializeField] private TextMeshProUGUI currentHighScoreText;
     [SerializeField] private TextMeshProUGUI yourScoreText;
+
+    [SerializeField] private Pogressbar pogressbar;
     
     private int score;
     private int highScore;
 
     private int tutorialShownCount;
     private float startTime;
+    private int startHp;
 
     private void Awake()
     {
@@ -48,6 +51,7 @@ public class GameStateManager : MonoBehaviour
         highScore = PlayerPrefs.GetInt("highScore"+levelName, 0);  
         Debug.Log("Current highscore: " + highScore);
         startTime = timeToWin;
+        startHp = enemyBaseHealth;
     }
 
     private void Start()
@@ -82,6 +86,7 @@ public class GameStateManager : MonoBehaviour
     public void BaseDamaged(int value)
     {
         enemyBaseHealth -= value;
+        pogressbar.current = startHp - enemyBaseHealth;
         
         if(enemyBaseHealth < 0)
             WonGame();
