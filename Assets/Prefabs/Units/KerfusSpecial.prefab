@@ -158,8 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16081c30d3debd14c9d026b98ad6d489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSystem: {fileID: 0}
-  unitMovementController: {fileID: 0}
+  healthSystem: {fileID: 7095332125361378875}
+  unitMovementController: {fileID: 4550779183227220777}
   damage: 0
   unitTier: 3
 --- !u!1001 &1241444744922430481

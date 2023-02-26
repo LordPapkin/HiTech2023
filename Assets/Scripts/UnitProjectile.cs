@@ -10,11 +10,6 @@ public class UnitProjectile : MonoBehaviour
     private BasicTurret target;
     private Vector3 moveDir;
 
-    public void SetDamageToUnits(int dmg)
-    {
-        damage = dmg;
-    }
-
     private void Start()
     {
         Destroy(this.gameObject, 5f);

@@ -14,7 +14,7 @@ public class RangedUnit : BasicUnit
     [SerializeField] private Transform projectileContainer;
     
     [SerializeField] private BasicTurret target;
-    
+
     void Start()
     {
         StartCoroutine(LookForEnemiesCor());
