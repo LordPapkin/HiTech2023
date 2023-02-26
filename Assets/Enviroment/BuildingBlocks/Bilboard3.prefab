@@ -50,6 +50,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: b357d1ac5bffd334287f75a186a611a2, type: 3}
   - {fileID: 2800000, guid: ef5b2405f108bdc48a35f6d269e77694, type: 3}
   - {fileID: 2800000, guid: c0bde896822f725439409f85c292e01c, type: 3}
+  - {fileID: 2800000, guid: 842f2ed5e26e10746b310913f8944ad6, type: 3}
 --- !u!33 &1880735464618134336
 MeshFilter:
   m_ObjectHideFlags: 0
