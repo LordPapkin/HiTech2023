@@ -20,6 +20,7 @@ public class HealthSystem : MonoBehaviour
         healthAmount -= damage;
         healthAmount = Mathf.Clamp(healthAmount, 0, healthAmountMax);
 
+        //Debug.Log(healthAmount);
         Damaged?.Invoke(this, EventArgs.Empty);
 
         if (IsDead())

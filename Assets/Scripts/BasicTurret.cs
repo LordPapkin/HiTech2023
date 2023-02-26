@@ -70,6 +70,6 @@ public class BasicTurret : MonoBehaviour
             return;
         GameObject spawnedProjectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, quaternion.identity, projectileContainer);
         BasicProjectile projectile = spawnedProjectile.GetComponent<BasicProjectile>();
-        projectile.SetTarget(target);
+        projectile.SetTarget(target.Hitbox);
     }
 }

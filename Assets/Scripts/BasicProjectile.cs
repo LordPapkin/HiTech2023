@@ -8,7 +8,7 @@ public class BasicProjectile : MonoBehaviour
    [SerializeField] private int damage;
    [SerializeField] private float moveSpeed;
    
-   private BasicUnit target;
+   private Transform target;
    private Vector3 moveDir;
 
    private void Start()
@@ -26,7 +26,7 @@ public class BasicProjectile : MonoBehaviour
       Hit(other);
    }
 
-   public void SetTarget(BasicUnit target)
+   public void SetTarget(Transform target)
    {
       this.target = target;
       if (this.target == null)
@@ -44,14 +44,15 @@ public class BasicProjectile : MonoBehaviour
 
    private void CalculateMoveDir()
    {
-      moveDir = (target.transform.position - transform.position).normalized;
+      moveDir = (target.position- transform.position).normalized;
    }
 
    private void Hit(Collider collider)
    {
       if (collider.CompareTag("Unit"))
       {
-         var healthSystem = collider.gameObject.GetComponent<HealthSystem>();
+         Debug.Log(collider.gameObject.name);
+         var healthSystem = collider.gameObject.GetComponentInParent<HealthSystem>();
          if (healthSystem != null)
          {
             healthSystem.TakeDamage(damage);
