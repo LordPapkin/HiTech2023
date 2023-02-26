@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -14,11 +15,22 @@ public class BasicTurret : MonoBehaviour
     [SerializeField] private Transform projectileContainer;
 
     [SerializeField] private BasicUnit target;
+
+    private TurretPad turretPad;
+    private HealthSystem healthSystem;
     
     void Start()
     {
         StartCoroutine(LookForEnemiesCor());
         StartCoroutine(ShootingCor());
+
+        healthSystem = GetComponent<HealthSystem>();
+        healthSystem.Died += Die;
+    }
+
+    public void SetTurretPad(TurretPad builtOnTurretPad)
+    {
+        turretPad = builtOnTurretPad;
     }
 
     private IEnumerator LookForEnemiesCor()
@@ -72,4 +84,11 @@ public class BasicTurret : MonoBehaviour
         BasicProjectile projectile = spawnedProjectile.GetComponent<BasicProjectile>();
         projectile.SetTarget(target.Hitbox);
     }
+
+    private void Die(object sender, EventArgs e)
+    {
+        turretPad.isEmpty = true;
+        Destroy(this.gameObject);
+    }
+
 }

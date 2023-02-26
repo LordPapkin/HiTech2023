@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1330856438702378228}
   - component: {fileID: 4172041228744804538}
   - component: {fileID: 4574651202566590}
+  - component: {fileID: 779696709367817146}
   m_Layer: 0
   m_Name: TurretPad
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &779696709367817146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274027444811890704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998220221e2a3904ebb5cce21b513f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEmpty: 1
