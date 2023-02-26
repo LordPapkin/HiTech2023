@@ -8,6 +8,7 @@ public class TurretManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] turretsPrefabs;
     [SerializeField] private GameObject[] turretPads;
+    [SerializeField] private Transform turretsParent;
 
     [SerializeField] private float minTimeToSpawnNextTurret;
     [SerializeField] private float maxTimeToSpawnNextTurret;

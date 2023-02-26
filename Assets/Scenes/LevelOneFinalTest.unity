@@ -385,6 +385,7 @@ MonoBehaviour:
   - {fileID: 1688695479}
   - {fileID: 694838388}
   - {fileID: 1355893360}
+  turretsParent: {fileID: 0}
   minTimeToSpawnNextTurret: 5
   maxTimeToSpawnNextTurret: 10
 --- !u!4 &804122962
