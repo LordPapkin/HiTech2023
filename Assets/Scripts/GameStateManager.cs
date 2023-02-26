@@ -48,7 +48,6 @@ public class GameStateManager : MonoBehaviour
             GameEvents.ShowTutorial();
             ChangeSpeed(GameSpeed.Paused);
         }
-           
     }
 
     private void Update()

@@ -506,11 +506,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1006916943470377841, guid: 98a60142da122e44480e9041828e549b,
-        type: 3}
-      propertyPath: timeToWin
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1664319126619840021, guid: 98a60142da122e44480e9041828e549b,
         type: 3}
       propertyPath: turretPads.Array.data[0]
@@ -1068,16 +1063,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InGameUIv2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7734242042958493902, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7734242044931637684, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67f6a393eebc305418e57d1c5c115be1, type: 3}
