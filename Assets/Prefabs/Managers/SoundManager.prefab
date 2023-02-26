@@ -46,6 +46,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 7805096999416220783}
+  AudioClips:
+  - {fileID: 8300000, guid: e9feaffdd75f5a84f98d6bf60aa647b8, type: 3}
+  - {fileID: 8300000, guid: eb0d6e228ad45d2419a27d111ed5b34c, type: 3}
+  - {fileID: 8300000, guid: 14c09c4d39baea14c87b4751318f1a8f, type: 3}
+  - {fileID: 8300000, guid: 11d615942b3bfec4f9955698c6215656, type: 3}
+  - {fileID: 8300000, guid: 3643c426edf23b04aba4c3195ff3d6b1, type: 3}
+  - {fileID: 8300000, guid: a08176643b50d934a9958f0e6988b873, type: 3}
+  - {fileID: 8300000, guid: 27ea38062c17e5940a2acf2e7ecf2b14, type: 3}
+  - {fileID: 8300000, guid: 2bbfe7a39252fa747a1e9ea9e41591fd, type: 3}
+  - {fileID: 8300000, guid: a05e87c82cb454942bed7a6b40c2221f, type: 3}
+  - {fileID: 8300000, guid: d7ba56148eb97cf489de3ecc016a84fa, type: 3}
+  - {fileID: 8300000, guid: b94a67e0e064e5447a9e4c55460594b6, type: 3}
+  - {fileID: 8300000, guid: 080f41f05af904e40acaa350c9825db2, type: 3}
 --- !u!82 &7805096999416220783
 AudioSource:
   m_ObjectHideFlags: 0
@@ -69,7 +82,7 @@ AudioSource:
   MinDistance: 5
   MaxDistance: 100
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0

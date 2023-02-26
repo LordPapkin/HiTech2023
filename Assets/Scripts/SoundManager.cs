@@ -16,7 +16,8 @@ public class SoundManager : MonoBehaviour
         EnemyBaseReached=8,
         RoombaOnDeath=9,
         DroneOnDeath=10,
-        KerfusOnDeath=11
+        KerfusOnDeath=11,
+        MoneyClick=12
     }
 
     public AudioSource Source;
@@ -34,10 +35,14 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayClip(SFX clip)
     {
-        
+        AudioClip tmp;
+        if (ListSFX.TryGetValue(clip, out tmp))
+        {
+            Source.clip = tmp;
+            Source.Play();
+        }
     }
 }
 
