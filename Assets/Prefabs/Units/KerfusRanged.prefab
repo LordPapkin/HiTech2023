@@ -164,7 +164,7 @@ MonoBehaviour:
   damage: 15
   searchRange: 12
   searchCooldown: 0.2
-  fireCooldown: 0.5
+  fireCooldown: 0.2
   projectilePrefab: {fileID: 6610277025052867049, guid: 42009a35cdef7b94aa05dcf61e7701ed,
     type: 3}
   projectileSpawnPoint: {fileID: 4043541208194012338}
