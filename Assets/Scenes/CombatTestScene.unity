@@ -302,24 +302,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1128091798022556453, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: unitToSpawn
-      value: 
-      objectReference: {fileID: 11400000, guid: 0eff0cadc6546f74fa4340ed0192e938,
-        type: 2}
-    - target: {fileID: 3757424431359065005, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: unitToSpawn
-      value: 
-      objectReference: {fileID: 11400000, guid: 592dee99171b7894e975425019b24105,
-        type: 2}
-    - target: {fileID: 4335362911965977431, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: unitToSpawn
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f1455dbc08bd954a95124c60a570520,
-        type: 2}
     - target: {fileID: 5203879058769955640, guid: 67f6a393eebc305418e57d1c5c115be1,
         type: 3}
       propertyPath: m_Pivot.x
@@ -430,42 +412,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameUIv2
       objectReference: {fileID: 0}
-    - target: {fileID: 5970897438934635800, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: unitToSpawn
-      value: 
-      objectReference: {fileID: 11400000, guid: cb5406d9a54aa9c4f956853ad26d79d1,
-        type: 2}
-    - target: {fileID: 6070693959610826464, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: unitToSpawn
-      value: 
-      objectReference: {fileID: 11400000, guid: ce0ed86c34b3b2749abc1ed26ad78314,
-        type: 2}
-    - target: {fileID: 6146457129262320713, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: unitToSpawn
-      value: 
-      objectReference: {fileID: 11400000, guid: 3c3de1f0558787342a4d195a5fb6725a,
-        type: 2}
-    - target: {fileID: 8318875767339088133, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: unitToSpawn
-      value: 
-      objectReference: {fileID: 11400000, guid: d8e5a199ce25a194e8ed98143efaa56b,
-        type: 2}
-    - target: {fileID: 8819736035245323471, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: unitToSpawn
-      value: 
-      objectReference: {fileID: 11400000, guid: c6c177fd4ff049a4e929975d13d619cc,
-        type: 2}
-    - target: {fileID: 8822218474321579255, guid: 67f6a393eebc305418e57d1c5c115be1,
-        type: 3}
-      propertyPath: unitToSpawn
-      value: 
-      objectReference: {fileID: 11400000, guid: e86365627c511e94da44a883a2148905,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67f6a393eebc305418e57d1c5c115be1, type: 3}
 --- !u!1001 &1508710063

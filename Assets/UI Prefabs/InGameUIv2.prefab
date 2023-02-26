@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn: {fileID: 11400000, guid: 7e25c81c2b36143429454983cbe7bd14, type: 2}
+  unitToSpawn: {fileID: 11400000, guid: 0eff0cadc6546f74fa4340ed0192e938, type: 2}
   isLocked: 1
 --- !u!1 &1266259845019863652
 GameObject:
@@ -4333,7 +4333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn: {fileID: 11400000, guid: 7e25c81c2b36143429454983cbe7bd14, type: 2}
+  unitToSpawn: {fileID: 11400000, guid: 3c3de1f0558787342a4d195a5fb6725a, type: 2}
   isLocked: 1
 --- !u!1 &2750284140246791186
 GameObject:
@@ -6178,7 +6178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  unitToSpawn: {fileID: 11400000, guid: e86365627c511e94da44a883a2148905, type: 2}
   isLocked: 1
 --- !u!1 &3495625140683585016
 GameObject:
@@ -8199,6 +8199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2216279295827734410}
+  - component: {fileID: 1074255190}
   m_Layer: 5
   m_Name: Resource Counter
   m_TagString: Untagged
@@ -8228,6 +8229,20 @@ RectTransform:
   m_AnchoredPosition: {x: 281, y: -100}
   m_SizeDelta: {x: 372.3834, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1074255190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650895029568639942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5507d1edd0c8eae47880c77d10ef4351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cebulionCount: {fileID: 4763094506979298230}
+  oilCount: {fileID: 4763094505877888158}
 --- !u!1 &4680933538316715717
 GameObject:
   m_ObjectHideFlags: 0
@@ -9096,7 +9111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn: {fileID: 11400000, guid: 7e25c81c2b36143429454983cbe7bd14, type: 2}
+  unitToSpawn: {fileID: 11400000, guid: 8f1455dbc08bd954a95124c60a570520, type: 2}
   isLocked: 1
 --- !u!1 &4848061315254244555
 GameObject:
@@ -13198,7 +13213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  unitToSpawn: {fileID: 11400000, guid: 592dee99171b7894e975425019b24105, type: 2}
   isLocked: 0
 --- !u!1 &5689893431018185463
 GameObject:
@@ -15820,7 +15835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  unitToSpawn: {fileID: 11400000, guid: d8e5a199ce25a194e8ed98143efaa56b, type: 2}
   isLocked: 0
 --- !u!1 &6938798728777489060
 GameObject:
@@ -16227,7 +16242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  unitToSpawn: {fileID: 11400000, guid: cb5406d9a54aa9c4f956853ad26d79d1, type: 2}
   isLocked: 1
 --- !u!1 &7211917969215674513
 GameObject:
@@ -17307,7 +17322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  unitToSpawn: {fileID: 11400000, guid: ce0ed86c34b3b2749abc1ed26ad78314, type: 2}
   isLocked: 1
 --- !u!1 &7834938216362108025
 GameObject:
@@ -18584,7 +18599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d56e91de14a97b4c880424276fa762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn: {fileID: 11400000, guid: 1798867b4c2ed9f46a5f7d257ce835eb, type: 2}
+  unitToSpawn: {fileID: 11400000, guid: c6c177fd4ff049a4e929975d13d619cc, type: 2}
   isLocked: 0
 --- !u!1 &8788718760512004966
 GameObject:

@@ -99,5 +99,10 @@ public class ResourceManager : MonoBehaviour
             return false;
         return true;
     }
+
+    public int GetResourceAmount(ResourceSO resource)
+    {
+        return resourceDictionary[resource];
+    }
     
 }
