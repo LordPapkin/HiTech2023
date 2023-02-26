@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
         if (Input.GetKey(KeyCode.S)) moveDir.x = 1;
         if (Input.GetKey(KeyCode.A)) moveDir.z = -1;
         if (Input.GetKey(KeyCode.D)) moveDir.z = 1;
-        moveDir.y = Input.mouseScrollDelta.y * 7f;
+        moveDir.y = (-1f)*Input.mouseScrollDelta.y * 7f;
 
         if (Input.GetKey(KeyCode.LeftShift))
             cameraVelocity = velocityHaiai;
