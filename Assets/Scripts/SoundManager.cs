@@ -6,32 +6,43 @@ public class SoundManager : MonoBehaviour
 {
     public enum SFX
     {
-        Gunshot=1, //
-        TowerShot=2, //
-        TowerDestroyed=3, //
-        TowerPlaced=4, //
-        RoombaBuilt=5, //
+        Gunshot=1,
+        TowerShot=2,
+        TowerDestroyed=3,
+        TowerPlaced=4,
+        RoombaBuilt=5,
         DroneBuilt=6,
         KerfusBuilt=7,
         EnemyBaseReached=8,
-        RoombaOnDeath=9, //
+        RoombaOnDeath=9,
         DroneOnDeath=10,
-        KerfusOnDeath=11 //
+        KerfusOnDeath=11,
+        MoneyClick=12
     }
 
     public AudioSource Source;
-
+    public List<AudioClip> AudioClips;
     public Dictionary<SFX, AudioClip> ListSFX;
     // Start is called before the first frame update
     void Start()
     {
-        
+        ListSFX = new Dictionary<SFX, AudioClip>();
+        int i = 1;
+        foreach (AudioClip clip in AudioClips)
+        {
+            ListSFX.Add((SFX)i, clip);
+            i++;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayClip(SFX clip)
     {
-        
+        AudioClip tmp;
+        if (ListSFX.TryGetValue(clip, out tmp))
+        {
+            Source.clip = tmp;
+            Source.Play();
+        }
     }
 }
 
