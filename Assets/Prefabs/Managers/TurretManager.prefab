@@ -71,8 +71,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   turretsParent: {fileID: 689830768922190055}
-  minTimeToSpawnNextTurret: 5
-  maxTimeToSpawnNextTurret: 10
+  minTimeToSpawnNextTurret: 3
+  maxTimeToSpawnNextTurret: 7
 --- !u!1 &7772456274665795391
 GameObject:
   m_ObjectHideFlags: 0

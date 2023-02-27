@@ -113,7 +113,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   searchRange: 10
   searchCooldown: 0.2
-  fireCooldown: 1.5
+  fireCooldown: 0.5
+  oilAmount: 5
+  scoreAmount: 100
   projectilePrefab: {fileID: 6610277025052867049, guid: dd52474b87526314a9259861b184dfe0,
     type: 3}
   projectileSpawnPoint: {fileID: 6088399032019580630}
