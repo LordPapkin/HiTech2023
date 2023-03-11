@@ -9,6 +9,6 @@ public class LeanInAnnimation : MonoBehaviour
     void OnEnable()
     {
         transform.localScale = Vector2.zero;
-        transform.LeanScale(Vector2.one, 0.8f);
+        transform.LeanScale(Vector2.one, 0.8f).setIgnoreTimeScale(true);
     }
 }

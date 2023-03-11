@@ -44,5 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1bda51de69fbf47b4c9afb15f45547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToWin: 0
-  enemyBaseHealth: 0
+  levelName: cracov
+  timeToWin: 60
+  enemyBaseHealth: 100
+  win: {fileID: 0}
+  lose: {fileID: 0}

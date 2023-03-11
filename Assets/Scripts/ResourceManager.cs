@@ -29,26 +29,26 @@ public class ResourceManager : MonoBehaviour
     private void Update()
     {
         // for test
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            AddResource(resourcesList.List[0], 10);
-            AddResource(resourcesList.List[1], 10);
-        }
-        
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            var cost = new ResourceCost
-            {
-                ResourceType = resourcesList.List[0],
-                Amount = 100
-            };
-            SpendResources(cost);
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            Debug.Log(resourcesList.List[0].NameString + " " + resourceDictionary[resourcesList.List[0]]);
-        }
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    AddResource(resourcesList.List[0], 10);
+        //    AddResource(resourcesList.List[1], 10);
+        //}
+        //
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    var cost = new ResourceCost
+        //    {
+        //        ResourceType = resourcesList.List[0],
+        //        Amount = 100
+        //    };
+        //    SpendResources(cost);
+        //}
+        //
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //    Debug.Log(resourcesList.List[0].NameString + " " + resourceDictionary[resourcesList.List[0]]);
+        //}
     }
 
     public void AddResource(ResourceSO type, int amount)

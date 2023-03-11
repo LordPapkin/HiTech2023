@@ -10,6 +10,9 @@ public class BasicTurret : MonoBehaviour
     [SerializeField] private float searchCooldown;
     [SerializeField] private float fireCooldown;
 
+    [SerializeField] private int oilAmount = 5;
+    [SerializeField] private int scoreAmount = 100;
+
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform projectileSpawnPoint;
     [SerializeField] private Transform projectileContainer;
@@ -18,12 +21,16 @@ public class BasicTurret : MonoBehaviour
 
     private TurretPad turretPad;
     private HealthSystem healthSystem;
+
+    private ResourceSO oil;
     
     void Start()
     {
         StartCoroutine(LookForEnemiesCor());
         StartCoroutine(ShootingCor());
 
+        oil = GameResources.Instance.Oil;
+        
         healthSystem = GetComponent<HealthSystem>();
         healthSystem.Died += Die;
     }
@@ -87,6 +94,8 @@ public class BasicTurret : MonoBehaviour
 
     private void Die(object sender, EventArgs e)
     {
+        ResourceManager.Instance.AddResource(oil, oilAmount);
+        GameStateManager.Instance.AddScore(scoreAmount);
         turretPad.isEmpty = true;
         Destroy(this.gameObject);
     }

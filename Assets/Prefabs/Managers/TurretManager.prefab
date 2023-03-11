@@ -40,7 +40,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3703329086581113762}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 159ff913525ac6f44afddd58d6fcaeae, type: 3}
   m_Name: 
@@ -71,8 +71,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   turretsParent: {fileID: 689830768922190055}
-  minTimeToSpawnNextTurret: 5
-  maxTimeToSpawnNextTurret: 10
+  minTimeToSpawnNextTurret: 3
+  maxTimeToSpawnNextTurret: 7
 --- !u!1 &7772456274665795391
 GameObject:
   m_ObjectHideFlags: 0

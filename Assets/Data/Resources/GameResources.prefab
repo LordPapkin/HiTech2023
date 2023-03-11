@@ -48,3 +48,5 @@ MonoBehaviour:
     type: 2}
   <Cebulion>k__BackingField: {fileID: 11400000, guid: 32078739814e1b346a2dfb510f0a0878,
     type: 2}
+  <Oil>k__BackingField: {fileID: 11400000, guid: 65a3d6bc1b28e3549bcc8e0d6b8208a7,
+    type: 2}
