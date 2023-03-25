@@ -1740,6 +1740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: 0eff0cadc6546f74fa4340ed0192e938, type: 2}
   isLocked: 1
+  unitImage: {fileID: 5080698970568991412}
 --- !u!114 &3339351145067958670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2796,7 +2797,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2156265456208783571}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3110,7 +3111,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.6226415, g: 0.60851425, b: 0.56683874, a: 1}
     m_SelectedColor: {r: 0.9716981, g: 0.8266512, b: 0.3987629, a: 1}
-    m_DisabledColor: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}
+    m_DisabledColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -4631,6 +4632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: 3c3de1f0558787342a4d195a5fb6725a, type: 2}
   isLocked: 1
+  unitImage: {fileID: 6659018228998510109}
 --- !u!114 &7242332843973386599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5545,7 +5547,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.6981132, g: 0.6553044, b: 0.6553044, a: 1}
     m_SelectedColor: {r: 1, g: 0.6273585, b: 0.6898511, a: 1}
-    m_DisabledColor: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}
+    m_DisabledColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -7027,6 +7029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: e86365627c511e94da44a883a2148905, type: 2}
   isLocked: 1
+  unitImage: {fileID: 6439625161009102449}
 --- !u!114 &8520615160355483540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10480,6 +10483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: 8f1455dbc08bd954a95124c60a570520, type: 2}
   isLocked: 1
+  unitImage: {fileID: 7116595150691016198}
 --- !u!114 &4220543296818049517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13973,6 +13977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: 592dee99171b7894e975425019b24105, type: 2}
   isLocked: 0
+  unitImage: {fileID: 6858892700175329765}
 --- !u!114 &2843948196363733692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15257,7 +15262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8627451, g: 0.8666667, b: 0.88235295, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16805,6 +16810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: d8e5a199ce25a194e8ed98143efaa56b, type: 2}
   isLocked: 0
+  unitImage: {fileID: 4746861088329640285}
 --- !u!114 &2512065709088758027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17226,6 +17232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: cb5406d9a54aa9c4f956853ad26d79d1, type: 2}
   isLocked: 1
+  unitImage: {fileID: 4714266913996273905}
 --- !u!114 &3254753202840683538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18166,6 +18173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: ce0ed86c34b3b2749abc1ed26ad78314, type: 2}
   isLocked: 1
+  unitImage: {fileID: 4652514010912179565}
 --- !u!114 &106006037617122142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19639,7 +19647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.7267194}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000038146973, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -1, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6781560103585775030
@@ -19795,6 +19803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 11400000, guid: c6c177fd4ff049a4e929975d13d619cc, type: 2}
   isLocked: 0
+  unitImage: {fileID: 8552185183640135081}
 --- !u!114 &8400098424485780705
 MonoBehaviour:
   m_ObjectHideFlags: 0

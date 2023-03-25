@@ -9,6 +9,7 @@ public class ButtonUnitSpawn : MonoBehaviour
 {
     [SerializeField] private UnitSO unitToSpawn;
     [SerializeField] private bool isLocked;
+    [SerializeField] private Image unitImage;
     
     private UnitSpawner unitSpawner;
     private Button thisButton;
@@ -62,23 +63,27 @@ public class ButtonUnitSpawn : MonoBehaviour
         if (isLocked)
         { 
             thisButton.interactable = false;
+            unitImage.color = Color.gray;
             return;
         }
         
         if (isOnCooldown)
         {
             thisButton.interactable = false;
+            unitImage.color = Color.gray;
             return;
         }
         
         if (isToExpensive)
         {
             thisButton.interactable = false;
+            unitImage.color = Color.gray;
             return;
         }
             
 
         thisButton.interactable = true;
+        unitImage.color = Color.white;
     }
     
     private IEnumerator UnitCooldown()
